@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروع يزن - اختبار الدوال الأسية (النسخة المصححة)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Almarai', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 30px;
+            padding: 60px 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #6b7280;
+        }
+        
+        .section {
+            background: linear-gradient(135deg, #f0f4ff 0%, #f9f0ff 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+            border: 2px solid #e0e7ff;
+        }
+        
+        .section h2 {
+            font-size: 24px;
+            color: #667eea;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+        
+        .section p {
+            font-size: 16px;
+            color: #4b5563;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        .fixes {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .fixes li {
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border-right: 4px solid #10b981;
+        }
+        
+        .fixes li strong {
+            color: #10b981;
+            font-weight: 800;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: 800;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+        }
+        
+        .btn-secondary:hover {
+            box-shadow: 0 15px 40px rgba(16, 185, 129, 0.6);
+        }
+        
+        .button-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 640px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            .btn {
+                padding: 14px 30px;
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">📊</div>
+            <h1>مشروع اختبار الدوال الأسية</h1>
+            <p class="subtitle">النسخة المصححة 2.0 - يزن (Yazan)</p>
+        </div>
+
+        <div class="section">
+            <h2>✅ تم إصلاح المشاكل!</h2>
+            <ul class="fixes">
+                <li>
+                    <strong>✓ مشكلة NaN:</strong>
+                    تم إصلاح مشكلة ظهور "NaN" في الرسوم البيانية عند تحريك الماوس
+                </li>
+                <li>
+                    <strong>✓ شكل الدائرة:</strong>
+                    تم إصلاح شكل دائرة النسبة المئوية لتظهر دائرية تماماً وليست بيضاوية
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🚀 كيفية الاستخدام</h2>
+            <p><strong>من الفلاش ميموري:</strong></p>
+            <p>1️⃣ انسخ المجلد كاملاً إلى الفلاش ميموري</p>
+            <p>2️⃣ افتح ملف <code>index.html</code> من أي جهاز</p>
+            <p>3️⃣ يعمل بدون إنترنت!</p>
+            
+            <p style="margin-top: 20px;"><strong>عبر الإنترنت:</strong></p>
+            <p>يمكنك فتح الرابط المباشر من الجوال أو أي جهاز متصل بالإنترنت</p>
+        </div>
+
+        <div class="button-group">
+            <a href="index.html" class="btn">🎯 ابدأ الاختبار</a>
+            <a href="README.md" class="btn btn-secondary" download>📥 تحميل التعليمات</a>
+        </div>
+
+        <div class="footer">
+            <p><strong>إعداد:</strong> يزن (Yazan)</p>
+            <p><strong>المادة:</strong> رياضيات ثالث ثانوي - الدوال الأسية</p>
+            <p><strong>النسخة:</strong> 2.0 (مصححة)</p>
+        </div>
+    </div>
+</body>
+</html>
